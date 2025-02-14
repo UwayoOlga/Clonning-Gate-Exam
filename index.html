@@ -1,43 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="src/output.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <title>University of Pennsylvania</title>
 </head>
 <body class="font-serif">
-  
-  <!-- Announcement Bar -->
-  <div class="bg-[#002F6C] text-white p-4 text-center">
-    <a href="#" class="block underline hover:no-underline">  <p class="text-3xl">On Friday, February 14, 2025 the University will suspend normal operations for the Eagles victory parade</p>
+
+  <div class="bg-[#00166c] text-white p-4 text-center">
+    <a href="#" class="block underline hover:no-underline">
+      <p class="text-xl md:text-2xl">
+        On Friday, February 14, 2025 the University will suspend normal operations for the Eagles victory parade
+      </p>
     </a>
-    <p class="text-xl">Normal operations will resume Monday, February 17, 2025</p>
-</div>
-
-  <!-- Hero Section with Background Image -->
-<div class="relative w-full h-230 overflow-hidden">
-  <img 
-    src="src/images/avian-bird-flu.jpg" 
-    alt="Background Image" 
-    class="w-full h-full object-fill">
-    <div class="absolute inset-0 z-10 bg-black/50"></div>
-</div>
-    
-    <!-- Logo Placeholder -->
-    <div class="absolute top-40 left-6">
-      <img src="src/images/UPenn-logo.svg" alt="Penn Logo" class="h-20 w-auto">
-    </div>
-
-    <!-- Overlay Text -->
-    <div class="absolute bottom-10 left-10 text-white">
-      <p class="uppercase text-sm tracking-widest">Health Sciences</p>
-      <h1 class="text-3xl font-semibold max-w-xl leading-snug">
-        How Penn is helping with bird flu research and disease surveillance
-      </h1>
-    </div>
+    <p class="text-lg md:text-xl mt-1">
+      Normal operations will resume Monday, February 17, 2025
+    </p>
   </div>
 
-</body>
-</html>
+  <div class="relative w-full h-[800px] overflow-hidden">
+    <img 
+      src="src/images/avian-bird-flu.jpg" 
+      alt="Background Image" 
+      class="absolute inset-0 w-full h-full object-cover opacity-100"/>
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <div class="relative z-10 flex flex-col justify-between h-full">
+
+      <div class="container mx-auto flex justify-between items-center p-2 border-b border-white w-full">
+        <a href="#">
+          <img src="src/images/UPenn-logo.svg" alt="Penn Logo" class="h-16 w-auto" />
+        </a>
+        <div class="flex items-center space-x-4">
+          <a href="#" class="hover:underline text-sm text-white">RESOURCES</a>
+          <a href="#" class="bg-[#BF0D3E] hover:bg-[#980A2A] text-white font-bold py-1 px-2 rounded text-sm">
+            GIVE TO PENN
+          </a>
+        </div>
+      </div>
+
+      <nav class="container mx-auto pt-9">
+        <ul class="flex space-x-2.5">
+          <li>
+            <a href="#" class="font-bold hover:underline text-white text-sm">ACADEMICS</a>
+          </li>
+          <li>
+            <a href="#" class="font-bold hover:underline text-white text-sm">More Academics</a>
+          </li>
+          <li>
+            <a href="#" class="font-bold hover:underline text-white text-sm">ADMISSIONS & AID</a>
+          </li>
+          <li>
+            <a href="#" class="font-bold hover:underline text-white text-sm">ATHLETICS</a>
+          </li>
+          <li>
+            <a href="#" class="font-bold hover:underline text-white text-sm">RESEARCH & INNOVATION</a>
+          </li>
+          <li>
+            <a href="#" class="font-bold hover:underline text-white text-sm">More Research & Innovation</a>
+          </li>
+          <li>
+            <a href="#" class="font-bold hover:underline text-white text-sm">LIFE AT PENN</a>
+          </li>
+          <li>
+            <a href="#" class="font-bold hover:underline text-white text-sm">More Life at Penn</a>
+          </li>
+          <li>
+            <a href="#" class="font-bold hover:underline text-white text-sm">ABOUT</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="p-8">
+        <p class="uppercase text-sm tracking-widest text-white">Health Sciences</p>
+        <h1 class="text-white text-4xl font-bold mb-4">
+          How Penn is helping with bird flu research and disease surveillance
+        </h1>
+      </div>
+    </div>
+  </div>
