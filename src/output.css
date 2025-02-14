@@ -533,6 +533,15 @@
   .top-6 {
     top: calc(var(--spacing) * 6);
   }
+  .top-10 {
+    top: calc(var(--spacing) * 10);
+  }
+  .top-40 {
+    top: calc(var(--spacing) * 40);
+  }
+  .top-80 {
+    top: calc(var(--spacing) * 80);
+  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
@@ -593,11 +602,17 @@
   .flex {
     display: flex;
   }
+  .h-0 {
+    height: calc(var(--spacing) * 0);
+  }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
   }
   .h-1 {
     height: calc(var(--spacing) * 1);
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
   }
   .h-3 {
     height: calc(var(--spacing) * 3);
@@ -607,9 +622,6 @@
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
-  }
-  .h-100 {
-    height: calc(var(--spacing) * 100);
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
@@ -622,6 +634,9 @@
   }
   .h-20 {
     height: calc(var(--spacing) * 20);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
   }
   .h-30 {
     height: calc(var(--spacing) * 30);
@@ -644,6 +659,9 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
   .h-146 {
     height: calc(var(--spacing) * 146);
   }
@@ -656,6 +674,12 @@
   .h-200 {
     height: calc(var(--spacing) * 200);
   }
+  .h-230 {
+    height: calc(var(--spacing) * 230);
+  }
+  .h-240 {
+    height: calc(var(--spacing) * 240);
+  }
   .h-280 {
     height: calc(var(--spacing) * 280);
   }
@@ -667,6 +691,15 @@
   }
   .h-3500 {
     height: calc(var(--spacing) * 3500);
+  }
+  .h-\[200px\] {
+    height: 200px;
+  }
+  .h-\[400px\] {
+    height: 400px;
+  }
+  .h-\[500px\] {
+    height: 500px;
   }
   .h-\[600px\] {
     height: 600px;
@@ -773,6 +806,9 @@
   .object-cover {
     object-fit: cover;
   }
+  .object-fill {
+    object-fit: fill;
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -799,6 +835,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-left {
+    text-align: left;
   }
   .font-serif {
     font-family: var(--font-serif);
@@ -851,6 +890,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: #980A2A;
+      }
+    }
+  }
+  .hover\:no-underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: none;
       }
     }
   }
